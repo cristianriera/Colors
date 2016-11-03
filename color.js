@@ -1,5 +1,5 @@
 //Declare the Color Object with our new keyword below here.
-Const Color = new Object()
+Const Color = new Object();
 
 /*
 ** rgb is an array that hold the color values.
@@ -23,14 +23,22 @@ Color.isColor = function(rgb){
 };
 
 Color.redIntensity = function(rgb){
-
+  let redworks = rgb[0]/255 * 100;
+  Math.round();
+  return redworks;
 };
 
-//greenIntensity
+Color.greenIntensity = function(rgb){
+  let greenworks = rgb[1]/255 * 100;
+  Math.round();
+  return greenworks;
+};
 
-
-//blueIntensity
-
+Color.blueIntensity = function(rgb){
+  let blueworks = rgb[2]/255 * 100;
+  Math.round();
+  return blueworks;
+};
 
 //brightness
 
