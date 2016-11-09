@@ -41,6 +41,10 @@ Color.blueIntensity = function(rgb){
 };
 
 //brightness
-
+Color.brightness = function(rgb){
+  var bright = b;
+  b = (rgb[0]+ rgb[1] + rgb[2])/6;
+  return bright;
+}
 
 //complement
